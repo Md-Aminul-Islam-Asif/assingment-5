@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
+      <title>Assingment-5</title>
+
+
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+            tailwind.config = {
+                  theme: {
+                        extend: {
+                              colors: {
+                                    clifford: '#da373d',
+                              }
+                        }
+                  }
+            }
+      </script>
+      <script src="https://kit.fontawesome.com/bbfc4be646.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css" />
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css" />
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css" />
+      <style>
+            @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+            .lexend {
+                  font-family: "Lexend", sans-serif;
+            }
+      </style>
 </head>
-<body>
+
+<body class="lexend">
+      <header>
+            <nav class="fixed top-0 left-0 right-0 backdrop-blur w-full z-[1]">
+                  <section class=" bg-[#f9f7f3] py-5 shadow">
+                    <div class="navbar w-[85%] mx-auto">
+                        <div class="navbar-start">
+
+                              <button  id="blog" class="btn btn-success lg:text-lg bg-[#B4F461] hover:bg-[#B4F461] " >Blog</button>
+                              
+                        </div>
+                        <div class="navbar-center mx-auto ">
+                              <img class="w-8 lg:w-[12%] mx-2" src="assets/logo.png" alt="">
+                              <p class="hidden lg:flex font-semibold lg:text-xl text-center">Donate Bangladesh</p>
+                        </div>
+                        <div class="navbar-end">
+                           <img class="w-4 lg:w-fit pr-2" src="assets/coin.png" alt="">
+                              <p class="font-semibold  lg:text-xl text-center text-[#111111B3]">5500 BDT</p>
+                        </div>
+                    </div>
+                  </section>
+                  <div class="py-10 gap-2  lg:gap-4 flex justify-center " >
+                        <button id="donation" class="btn btn-success lg:text-lg bg-[#B4F461] hover:bg-[#B4F461] " >Donation</button>
+                        <button id="donation" class="btn btn-success lg:text-lg bg-[#ffff] hover:bg-[#f9f7f3]" >History</button>
+                  </div>
+            </nav>
+      </header>
+
       
+</main>
 </body>
+
 </html>
