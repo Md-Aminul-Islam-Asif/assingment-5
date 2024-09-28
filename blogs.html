@@ -1,11 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
+      <title>blogs</title>
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+            tailwind.config = {
+                  theme: {
+                        extend: {
+                              colors: {
+                                    clifford: '#da373d',
+                              }
+                        }
+                  }
+            }
+      </script>
+      <script src="https://kit.fontawesome.com/bbfc4be646.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css" />
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css" />
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css" />
+      <style>
+            @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+            .lexend {
+                  font-family: "Lexend", sans-serif;
+            }
+      </style>
 </head>
+
 <body>
-      
+      <header>
+            <nav class=" top-0 left-0 right-0 w-full z-[1] ">
+                  <section class=" bg-[#f9f7f3] py-5 shadow">
+                        <div class="navbar w-[85%] mx-auto">
+                              <div class="navbar-start">
+
+                                    <button id="home"
+                                          class=" btn btn-success lg:text-lg bg-[#B4F461] hover:bg-[#B4F461]">Home</button>
+
+                              </div>
+                              <div class="navbar-center mx-auto ">
+                                    <img class="w-8 lg:w-[12%] mx-2" src="assets/logo.png" alt="">
+                                    <p class="hidden lg:flex font-semibold lg:text-xl text-center">Donate Bangladesh</p>
+                              </div>
+                              <div class="navbar-end">
+                                    <img class="w-4 lg:w-fit pr-2" src="assets/coin.png" alt="">
+                                    <p class="font-semibold  lg:text-xl text-center text-[#111111B3]">8500 BDT</p>
+                              </div>
+                        </div>
+                  </section>
+                  <div class="py-10 gap-2  lg:gap-4 flex justify-center mb-70 ">
+                        <button id="donation"
+                              class="btn btn-success lg:text-lg bg-[#B4F461] hover:bg-[#B4F461] ">Donation</button>
+                        <button id="history"
+                              class="btn btn-success lg:text-lg bg-[#ffff] hover:bg-[#f9f7f3]">History</button>
+                  </div>
+            </nav>
+      </header>
+      <main class="mx-auto w-[80%]">
+            <h1 class=" text-2xl font-bold lg:text-4xl mb-3">
+                  Important FAQ <i class="fa-solid fa-question"></i>
+            </h1>
+            <div class="collapse collapse-arrow bg-base-200 mb-3 bg-purple-50 ">
+                  <input type="radio" name="my-accordion-2" checked="checked" />
+                  <div class="collapse-title text-xl font-medium">What is DOM?</div>
+                  <div class="collapse-content">
+                        <p>The DOM (Document Object Model) is a programming interface for web documents. It represents
+                              the structure of an HTML or XML document as a tree of objects, where each object
+                              corresponds to a part of the document (like elements, attributes, and text). This allows
+                              programming languages like JavaScript to interact with, manipulate, and modify the
+                              document's content, structure, and style dynamically.</p>
+                  </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200 mb-3 bg-purple-50">
+                  <input type="radio" name="my-accordion-2" />
+                  <div class="collapse-title text-xl font-medium"> How do you select an element from the DOM?</div>
+                  <div class="collapse-content">
+                        <p>
+                              Selecting an element from the DOM is commonly done using JavaScript. The most popular
+                              methods for DOM selection are based on element attributes like ID, class, tag name, and
+                              selectors </p>
+                  </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200 mb-3 bg-purple-50">
+                  <input type="radio" name="my-accordion-2" />
+                  <div class="collapse-title text-xl font-medium"> What is event delegation in the context of the
+                        DOM,and why is it
+                        useful?</div>
+                  <div class="collapse-content">
+                        <p>Event delegation is a technique in the DOM where you attach a single event listener to a
+                              parent element to handle events that occur on its child elements. Instead of adding
+                              individual event listeners to each child element, the parent element captures the event as
+                              it "bubbles up" from the child. This technique leverages the event bubbling mechanism,
+                              where events propagate from the innermost element (the event target) up to the outermost
+                              (the root of the DOM).</p>
+                  </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200 mb-3 bg-purple-50">
+                  <input type="radio" name="my-accordion-2" />
+                  <div class="collapse-title text-xl font-medium">  How do you manipulate and element's attributes and style using the
+                        DOM?</div>
+                  <div class="collapse-content">
+                        <p>To manipulate an element's attributes, use getAttribute(), setAttribute(), or
+                              removeAttribute(). For styles, modify the style property directly (e.g.,
+                              element.style.color = "red") or use classList methods to add, remove, or toggle CSS
+                              classes. You can also handle data attributes via the dataset property (e.g.,
+                              element.dataset.info).</p>
+                  </div>
+            </div>
+
+      </main>
+
+
+      <script src="js/blogs.js"></script>
+      <script src="js/history.js/history.js"></script>
+      <script src="js/blogs.js"></script>
 </body>
+
 </html>
