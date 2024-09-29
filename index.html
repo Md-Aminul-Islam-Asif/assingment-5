@@ -51,26 +51,26 @@
                               </div>
                               <div class="navbar-end">
                                     <img class="w-4 lg:w-fit pr-2" src="assets/coin.png" alt="">
-                                    <p class="font-semibold  lg:text-xl text-center text-[#111111B3]">5500 BDT</p>
+                                    <p class="font-semibold  lg:text-xl text-center text-[#111111B3]"><span id="balance">5500 </span>BDT</p>
                               </div>
                         </div>
                   </section>
                   <div class="py-10 gap-2  lg:gap-4 flex justify-center ">
                         <button id="donation"
                               class="btn btn-success lg:text-lg bg-[#B4F461] hover:bg-[#B4F461] ">Donation</button>
-                        <button id="history"
+                        <button id="history" 
                               class="btn btn-success lg:text-lg bg-[#ffff] hover:bg-[#f9f7f3]">History</button>
                   </div>
             </nav>
       </header>
-      <main id="main" class="mt-80">
+      <main id="main" class="mt-80"></main>
             <section id="history-container" class="w-[80%] mx-auto hidden space-y-5">
 
 
 
             </section>
             <section id="cards" class="hidde">
-                  <section class="w-[80%] mx-auto grid justify-items-center gap-7">
+                  <section class="w-[80%] mx-auto grid justify-items-center gap-10">
                         <div class="card lg:card-side bg-base-100 shadow-xl p-4 border-2">
                               <figure class="w-full lg:w-[50%] lg:mx-5">
                                     <img class="lg:w-full lg:py-4" src="assets/noakhali.png" alt="" />
@@ -79,7 +79,7 @@
                                     <div class="flex justify-center items-center rounded-lg bg-[#1111110D] w-fit p-2">
                                           <img class="w-[20%] lg:w-fit pr-1" src="assets/coin.png" alt="" />
                                           <h1 class="font-semibold text-[#111111B3] text-center">
-                                                <span id="noakhali">2400</span>BDT
+                                                <span id="noakhali">400</span>BDT
                                           </h1>
                                     </div>
                                     <h2 class="card-title py-6">Donate for Flood at Noakhali,Bangladesh</h2>
@@ -94,13 +94,13 @@
                                           <input id="input-1" type="number" placeholder="Donation Amount"
                                                 class="input input-bordered input-success w-full" />
 
-                                          <button id="d1" class="btn btn-success w-full bg-[#B4F461] hover:bg-[#B4F461] " onclick="">
+                                          <button id="donation1" class="btn btn-success w-full bg-[#B4F461] hover:bg-[#B4F461] " onclick="">
                                                 Donate Now
                                           </button>
                                           <dialog id="my_modal_1" class="modal">
                                                 <div class="modal-box flex flex-col items-center">
                                                       <h3 class="text-2xl font-bold">Congrates!</h3>
-                                                      <img class="py-2 mt-2 w-[20%]" src="images/coin.png" alt="">
+                                                      <img class="py-2 mt-2 w-[20%]" src="assets/coin.png" alt="">
                                                       <p class="py-4">
                                                             You have Donated for Humankind
                                                       </p>
@@ -141,7 +141,7 @@
                                           <input id="input-2" type="number" placeholder="Donation Amount"
                                                 class="input input-bordered input-success w-full" />
 
-                                          <button id="d2" class="btn btn-success w-full bg-[#B4F461] hover:bg-[#B4F461] " onclick="">
+                                          <button id="donation2" class="btn btn-success w-full bg-[#B4F461] hover:bg-[#B4F461] " onclick="">
                                                 Donate Now
                                           </button>
                                           <dialog id="my_modal_2" class="modal">
@@ -191,7 +191,7 @@
                                           <input id="input-3" type="number" placeholder="Donation Amount"
                                                 class="input input-bordered input-success w-full" />
 
-                                          <button id="d3" class="btn btn-success w-full bg-[#B4F461] hover:bg-[#B4F461]" onclick="">
+                                          <button id="donation3" class="btn btn-success w-full bg-[#B4F461] hover:bg-[#B4F461]" onclick="">
                                                 Donate Now
                                           </button>
                                           <dialog id="my_modal_3" class="modal">
@@ -215,20 +215,20 @@
                                     </div>
                               </div>
                         </div>
-                        <div class="card lg:card-side bg-base-100 shadow-xl p-4 border-2 bottom-10">
+                              
+                           <div class="card lg:card-side bg-base-100 shadow-xl p-4 border-2">
                               <figure class="w-full lg:w-[50%] lg:mx-5">
                                     <img class="lg:w-full lg:py-4" src="assets/free palestine.jpg" alt="" />
                               </figure>
                               <div class="card-body lg:w-[50%]">
-                                    <div class="flex justify-center items-center rounded-lg bg-[#1111110D] w-fit p-2">
+                                    <div class="flex justify-center items-center rounded-lg bg-[#1111110D] w-fit p-2"> 
                                           <img class="w-[20%] lg:w-fit pr-1" src="assets/coin.png" alt="" />
                                           <h1 class="font-semibold text-[#111111B3] text-center">
-                                                <span id="noakhali">400</span>BDT
+                                                <span id="palestine">400</span>BDT
                                           </h1>
                                     </div>
                                     <h2 class="card-title py-6">Donate for Palestine</h2>
-                                    <p>
-                                          As we approach the start of the Muslim holy month of Ramadan, the brutal war
+                                    <p>As we approach the start of the Muslim holy month of Ramadan, the brutal war
                                           on Gaza has entered its sixth month. The assault on Gaza has killed more than
                                           30,000 Palestinians, including 13,000 children. Aid delivery to the north of
                                           Gaza is being restricted, resulting in the starvation of many more.
@@ -240,18 +240,19 @@
                                           area of around 63 square kilometres (24sq miles). The average population
                                           density is now more than 22,200 people per square kilometre (57,276 per square
                                           mile). That is twice the density of New York City.
+                                        
                                     </p>
                                     <div class="card-actions w-full flex-col items-center justify-center pt-5">
-                                          <input id="input-1" type="number" placeholder="Donation Amount"
+                                          <input id="input-4" type="number" placeholder="Donation Amount"
                                                 class="input input-bordered input-success w-full" />
 
-                                          <button id="d1" class="btn btn-success w-full bg-[#B4F461] hover:bg-[#B4F461] " onclick="">
+                                          <button id="donation4" class="btn btn-success w-full bg-[#B4F461] hover:bg-[#B4F461] " onclick="">
                                                 Donate Now
                                           </button>
-                                          <dialog id="my_modal_1" class="modal">
+                                          <dialog id="my_modal_4" class="modal">
                                                 <div class="modal-box flex flex-col items-center">
                                                       <h3 class="text-2xl font-bold">Congrates!</h3>
-                                                      <img class="py-2 mt-2 w-[20%]" src="images/coin.png" alt="">
+                                                      <img class="py-2 mt-2 w-[20%]" src="assets/coin.png" alt="">
                                                       <p class="py-4">
                                                             You have Donated for Humankind
                                                       </p>
@@ -268,15 +269,24 @@
                                           </dialog>
                                     </div>
                               </div>
-                        </div>
+                        </div> 
                   </section>
             </section>
 
       </main>
-      <script src="js/index.js"></script>
-      <script src="js/history.js/history.js"></script>
+      <script src="js/index.js"></script>  
+      <script src="js/blogs.js"></script>
+      <script src="js/link.js"></script>
+      <script src="js/noakhali.js"></script>
+      <script src="js/feni.js"></script>
+      <script src="js/quota.js"></script>
+      <script src="js/history.js"></script>
+      <script src="js/palestine.js"></script>
+     
       
+<footer id="footer" class="w-full">
 
+</footer>
 </body>
 
 </html>
