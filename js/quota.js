@@ -47,7 +47,7 @@ donation3.addEventListener("click", function () {
 
 
             const historyItem = document.createElement("div");
-            historyItem.className = "border-4 border-green-500 w-full p-5 rounded-2xl";
+            historyItem.className = "border-2 border-black-500 w-full p-5 rounded-xl";
             historyItem.innerHTML = `
    <p class="py-2 text-lg font-bold">${input} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
    <p>Date: ${formattedDate} GMT${timezoneOffset} (${timezoneName})</p>
